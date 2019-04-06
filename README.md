@@ -5,7 +5,7 @@ Part1a assumes that there exists no correlated noise across the neurons, making 
 stimulus simpler.
 Part1b and subsequent parts take into account correlated noise.
 
-The two figures below show various weight vectors defining the various population responses for various differences in the stimulus orientation. The first figure is the output without noise. The second, with noise.
+The two figures below show various weight vectors defining the various population responses for various differences in the stimulus orientation. The first figure is the output without noise. The second, with expected Poisson noise.
 
 ![alt text](https://github.com/aryamanmajumdar/von-mises-neurons/blob/master/weights_vs_phipref_withoutnoise.jpg)
 
