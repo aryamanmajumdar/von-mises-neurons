@@ -30,6 +30,7 @@ function [pop_vec] = von_mis_neurons(phi, c, neurons, K)
    
 end
 
+%Returns variance matrix that helps compute covariance matrix
 function[variance_matrix] = return_variance_matrix(neurons)
     variance_matrix = zeros(neurons, neurons);
     for i=1:neurons
@@ -39,6 +40,7 @@ function[variance_matrix] = return_variance_matrix(neurons)
     end
 end
 
+%Returns correlation matrix that helps compute covariance matrix
 function[correlation_matrix] = return_correlation_matrix(neurons)
     correlation_matrix = zeros(neurons, neurons);
     
@@ -54,6 +56,7 @@ function[correlation_matrix] = return_correlation_matrix(neurons)
     end
 end
 
+%Computes covariance matrix using correlation and variance matrix
 function [cov_matrix] = return_cov_matrix(phi1, phi2, neurons)
     cov_matrix = zeros(neurons, neurons);
     
@@ -64,6 +67,7 @@ function [cov_matrix] = return_cov_matrix(phi1, phi2, neurons)
     
 end
 
+%Function that calculates the weights w
 function [w] = weight_calculation(phi1, phi2, c, neurons, K)
     f1 = von_mis_neurons(phi1, c, neurons, K);
     f2 = von_mis_neurons(phi2, c, neurons, K);
