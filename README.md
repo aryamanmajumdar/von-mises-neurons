@@ -6,3 +6,6 @@ stimulus simpler.
 Part1b and subsequent parts take into account correlated noise.
 
 ![alt text](https://github.com/aryamanmajumdar/von-mises-neurons/blob/master/weights_vs_phipref_withoutnoise.jpg)
+
+![alt text2](https://github.com/aryamanmajumdar/von-mises-neurons/blob/master/weights_vs_phipref_withnoise.jpg)
+
